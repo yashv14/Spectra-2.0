@@ -16,7 +16,7 @@
   outline: none;
   border: none;
   text-decoration: none;
-  text-transform: capitalize;
+
   transition: 0.2s linear;
 }
 
@@ -649,4 +649,11 @@ html::-webkit-scrollbar-thumb {
   height: auto;
   object-fit: contain;
   max-width: 150px; /* Prevents logos from becoming too large */
+}
+
+.footer .box-container .box a[href^="mailto"], 
+.footer .box-container .box a {
+    text-transform: none !important;
+    -webkit-font-smoothing: antialiased; /* Smoothens the font edges */
+    -moz-osx-font-smoothing: grayscale;
 }
