@@ -1,5 +1,5 @@
 const countdown = () => {
-  const eventDate = new Date('February 13, 2025 00:00:00').getTime(); // Set your event date here
+  const eventDate = new Date('February 13, 2026 00:00:00').getTime(); // Set your event date here
   const now = new Date().getTime();
   const distance = eventDate - now;
 
@@ -94,6 +94,7 @@ autoplay: {
   disableOnInteraction: false,
 },
 });
+
 
 
 
