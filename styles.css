@@ -703,3 +703,9 @@ html::-webkit-scrollbar-thumb {
 
 
 
+@media (max-width: 768px) {
+  .home {
+    padding-top: 190px !important; /* pushes content below navbar + announcement */
+  }
+}
+
