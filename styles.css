@@ -30,7 +30,6 @@ html {
 .header {
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
   z-index: 1000;
 }
@@ -39,7 +38,6 @@ html {
 .announcement-bar {
   position: fixed;
   top: 80px;   /* pushes it below header */
-  left: 0;
   width: 100%;
   background: #ff416c;
   color: #fff;
@@ -50,14 +48,13 @@ html {
 }
 
 /* PUSH PAGE DOWN */
+
 .home {
-  padding-top: 160px !important;
+  min-height: calc(100vh - 150px);
+  padding-top: 150px;
 }
 
-body{
-  padding-top: 120px; /* navbar height + announcement height */
-   background: #222;
-}
+
 
 section {
   padding: 2rem 9%;
@@ -743,6 +740,7 @@ html::-webkit-scrollbar-thumb {
     transform: translateX(-100%);
   }
 }
+
 
 
 
