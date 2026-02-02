@@ -1,3 +1,4 @@
+
 /* Created by Tivotal */
 
 /* Google Fonts(Poppins) */
@@ -25,106 +26,68 @@ html {
   scroll-padding-top: 7rem;
   scroll-behavior: smooth;
 }
-/* HEADER stays fixed */
+.header{
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 100%;
+  z-index: 1000;
+}
 
+/* Announcement bar */
 
-/* ANNOUNCEMENT */
 .announcement-bar {
   position: fixed;
-  top: 70px;   /* pushes it below header */
+  top: 95px;   /* THIS is the key fix */
+  left: 0;
   width: 100%;
-  background: #ff416c;
+  background: linear-gradient(90deg, #ff416c, #ff4b2b);
   color: #fff;
   text-align: center;
-  padding: 6px 0;
-  font-size: 14px;
+  padding: 10px 0;
+  font-size: 15px;
+  font-weight: 500;
   z-index: 999;
 }
 
-/* PUSH PAGE DOWN */
-
-.home {
-  background: #111;
-  color: #fff;
-  min-height: calc(100vh - 150px);
-  padding-top: 150px;
+body{
+  padding-top: 150px; /* navbar height + announcement height */
+   background: #222;
 }
-
-
-
 
 section {
   padding: 2rem 9%;
 }
 
-/* HEADER */
 .header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  padding: 15px 8%;
-  background: #111;
+  right: 0;
+  z-index: 10000;
+  background: #333;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  z-index: 1000;
+  justify-content: space-between;
+  padding: 1.5rem 9%;
 }
 
 .header .logo {
+  font-weight: bolder;
   color: #fff;
-  font-size: 22px;
-  font-weight: 700;
+  font-size: 2.5rem;
 }
 
 .header .logo span {
-  color: #3498db;
+  color: var(--theme-color);
 }
 
-.navbar a {
+.header .navbar a {
+  font-size: 1.7rem;
   color: #fff;
-  margin-left: 25px;
-  font-size: 16px;
-  transition: 0.3s;
+  margin-left: 2rem;
 }
 
-.navbar a:hover {
-  color: #3498db;
-}
-
-#menu-btn {
-  color: #fff;
-  font-size: 22px;
-  cursor: pointer;
-  display: none;
-}
-
-@media (max-width: 768px) {
-  #menu-btn {
-    display: block;
-  }
-
-  .navbar {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background: #111;
-    display: none;
-    flex-direction: column;
-    text-align: center;
-    padding: 15px 0;
-  }
-
-  .navbar.active {
-    display: flex;
-  }
-
-  .navbar a {
-    margin: 10px 0;
-  }
-}
- 
 .header .navbar a:hover {
   color: var(--theme-color);
 }
@@ -688,7 +651,7 @@ html::-webkit-scrollbar-thumb {
 
 .logo-container {
   width: 100%;
-  color: #fff;
+  color: #222;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -737,4 +700,6 @@ html::-webkit-scrollbar-thumb {
     transform: translateX(-100%);
   }
 }
+
+
 
