@@ -26,17 +26,12 @@ html {
   scroll-behavior: smooth;
 }
 /* HEADER stays fixed */
-.header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}
+
 
 /* ANNOUNCEMENT */
 .announcement-bar {
   position: fixed;
-  top: 80px;   /* pushes it below header */
+  top: 70px;   /* pushes it below header */
   width: 100%;
   background: #ff416c;
   color: #fff;
@@ -49,9 +44,12 @@ html {
 /* PUSH PAGE DOWN */
 
 .home {
+  background: #111;
+  color: #fff;
   min-height: calc(100vh - 150px);
   padding-top: 150px;
 }
+
 
 
 
@@ -690,7 +688,7 @@ html::-webkit-scrollbar-thumb {
 
 .logo-container {
   width: 100%;
-  color: #222;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -739,3 +737,4 @@ html::-webkit-scrollbar-thumb {
     transform: translateX(-100%);
   }
 }
+
