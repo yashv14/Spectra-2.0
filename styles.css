@@ -29,25 +29,29 @@ html {
 .header{
   position: fixed;
   top: 0;
+  left:0;
   width: 100%;
   z-index: 1000;
 }
 
 /* Announcement bar */
+
 .announcement-bar {
   position: fixed;
-  top: 70px; /* height of your navbar */
+  top: 95px;   /* THIS is the key fix */
+  left: 0;
   width: 100%;
   background: linear-gradient(90deg, #ff416c, #ff4b2b);
   color: #fff;
   text-align: center;
-  padding: 8px 0;
-  font-size: 14px;
+  padding: 10px 0;
+  font-size: 15px;
   font-weight: 500;
   z-index: 999;
 }
+
 body{
-  padding-top: 120px; /* navbar height + announcement height */
+  padding-top: 150px; /* navbar height + announcement height */
    background: #222;
 }
 
@@ -679,18 +683,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 /* Announcement Bar */
-.announcement-bar {
-  width: 100%;
-  background: linear-gradient(90deg, #ff416c, #ff4b2b);
-  color: #fff;
-  text-align: center;
-  padding: 8px 0;
-  font-size: 14px;
-  font-weight: 500;
-  position: relative;
-  z-index: 999;
-  overflow: hidden;
-}
+
 
 .announcement-bar p {
   display: inline-block;
@@ -707,4 +700,5 @@ html::-webkit-scrollbar-thumb {
     transform: translateX(-100%);
   }
 }
+
 
