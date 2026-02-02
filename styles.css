@@ -26,9 +26,29 @@ html {
   scroll-padding-top: 7rem;
   scroll-behavior: smooth;
 }
+.header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
 
-body {
-  background: #222;
+/* Announcement bar */
+.announcement-bar {
+  position: fixed;
+  top: 70px; /* height of your navbar */
+  width: 100%;
+  background: linear-gradient(90deg, #ff416c, #ff4b2b);
+  color: #fff;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 14px;
+  font-weight: 500;
+  z-index: 999;
+}
+body{
+  padding-top: 120px; /* navbar height + announcement height */
+   background: #222;
 }
 
 section {
@@ -687,3 +707,4 @@ html::-webkit-scrollbar-thumb {
     transform: translateX(-100%);
   }
 }
+
