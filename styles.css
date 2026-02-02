@@ -657,3 +657,33 @@ html::-webkit-scrollbar-thumb {
     -webkit-font-smoothing: antialiased; /* Smoothens the font edges */
     -moz-osx-font-smoothing: grayscale;
 }
+
+/* Announcement Bar */
+.announcement-bar {
+  width: 100%;
+  background: linear-gradient(90deg, #ff416c, #ff4b2b);
+  color: #fff;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+  z-index: 999;
+  overflow: hidden;
+}
+
+.announcement-bar p {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scrollText 15s linear infinite;
+}
+
+/* Scrolling animation */
+@keyframes scrollText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
