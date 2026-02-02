@@ -26,29 +26,32 @@ html {
   scroll-padding-top: 7rem;
   scroll-behavior: smooth;
 }
-.header{
+/* HEADER stays fixed */
+.header {
   position: fixed;
   top: 0;
-  left:0;
+  left: 0;
   width: 100%;
   z-index: 1000;
 }
 
-/* Announcement bar */
-
+/* ANNOUNCEMENT */
 .announcement-bar {
   position: fixed;
-  top: 70px;   /* THIS is the key fix */
-  width:100%;
+  top: 80px;   /* pushes it below header */
   left: 0;
   width: 100%;
-  background: linear-gradient(90deg, #ff416c, #ff4b2b);
+  background: #ff416c;
   color: #fff;
   text-align: center;
-  padding: 10px 0;
-  font-size: 15px;
-  font-weight: 500;
+  padding: 6px 0;
+  font-size: 14px;
   z-index: 999;
+}
+
+/* PUSH PAGE DOWN */
+.home {
+  padding-top: 160px !important;
 }
 
 body{
@@ -740,6 +743,7 @@ html::-webkit-scrollbar-thumb {
     transform: translateX(-100%);
   }
 }
+
 
 
 
